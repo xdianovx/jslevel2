@@ -21,7 +21,7 @@ const renderProduct = (title, price, img = 'https://placehold.it/200x150') => {
 //Функция генератор
 
 const renderProducts = (list) => {
-    const productList = list.map((item) => renderProduct(item.title, item.price, item.img));
+    const productList = list.map((item) => renderProduct(item.title, item.price, item.img)).join('');
     document.querySelector('.products').innerHTML = productList;
 };
 renderProducts(products);
