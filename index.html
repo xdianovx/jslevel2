@@ -1,32 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="header">
-    <div class="header__wrap container">
-        <nav class="header__menu">
-            <ul class="header__menu_ul">
-                <li class="header__menu_li">Главная</li>
-                <li class="header__menu_li">Каталог</li>
-                <li class="header__menu_li">Адреса</li>
-                <li class="header__menu_li">Контакты</li>
-            </ul>
-        </nav>
-        <button class="cart__btn">Корзина</button>
+<header>
+    <div class="logo">Интернет-магазин</div>
+    <div class="cart">
+        <form action="#" class="search-form">
+            <input type="text" class="search-field">
+            <button class="btn-search" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+        <button class="btn-cart" type="button">Корзина</button>
+        <div class="cart-block invisible"></div>
     </div>
 </header>
-<main class="">
-    <div class="products container"></div>
+<main>
+    <div class="products"></div>
 </main>
-
-
-<script src="main.js" ></script>
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
